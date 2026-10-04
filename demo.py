@@ -43,6 +43,7 @@ st.caption(
     "Based on the Paper: https://cs229.stanford.edu/proj2020spr/report/Zhan_Li.pdf."
     " Intubation and death from basic patient information."
 )
+st.caption("Team: Neal Chandhrakar, Neeraj R Rugi")
 
 with st.form("patient_form"):
     col1, col2 = st.columns(2)
