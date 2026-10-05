@@ -92,6 +92,7 @@ if submitted:
         score = float(model.predict_proba(X)[0, 1])
         flagged = score >= THRESHOLD
         with col:
+            st.metric(label=f"{name} risk score", value=f"{score:.2%}")
             st.text(f"{name}")
             if flagged:
                 st.error(f"Flagged: higher risk")
